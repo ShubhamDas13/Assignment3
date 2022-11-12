@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>DPM Assignment 1</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <br />
+      <h2 align="center">DPM Assignment 1</h2>
+      <form action="\submit" method="POST">
+        <select name="namelist" class="form-control">
+          <option>Select Company</option>
+          {% for i in nameslist %}
+          <option>{{i}}</option>
+          {% endfor %}
+        </select>
+        <h5 align="center">
+          Start Date: <input type="date" name="Start_Date" />
+          <hr />
+          End Date: <input type="date" name="End_Date" />
+          <hr />
+          <input type="submit" value="Submit" />
+          <hr />
+          <hr />
+        </h5>
+      </form>
+      <br />
+    </div>
+    <script></script>
+  </body>
+</html>
